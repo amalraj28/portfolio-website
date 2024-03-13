@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
 import { ReactTyped } from "react-typed";
+import PropTypes from "prop-types";
 
-function TypeWriter({jobs}) {
+function TypeWriter({ jobs }) {
 	return (
 		<span>
 			<ReactTyped
@@ -14,5 +14,9 @@ function TypeWriter({jobs}) {
 		</span>
 	);
 }
+
+TypeWriter.propTypes = {
+	jobs: PropTypes.arrayOf(PropTypes.string),
+};
 
 export default TypeWriter;
