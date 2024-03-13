@@ -3,6 +3,7 @@ function Navbar() {
 		<nav
 			className="navbar navbar-expand-lg bg-dark fixed-top"
 			data-bs-theme="dark"
+			style={{top: "-0.20svh", width:"100vw"}}
 		>
 			<div className="container-fluid">
 				<div className="navbar-header">
