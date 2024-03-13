@@ -1,0 +1,17 @@
+.project-item {
+  display: flex;
+  background-color: pink;
+  justify-content: space-around; // small screen --- center large space-between
+  flex-wrap: wrap;
+  width: fit-content;
+
+  .item-description {
+    width: 100%;
+    justify-content: space-between;
+    display: flex ;
+    padding-top: 3%;
+  }
+
+  
+  
+}

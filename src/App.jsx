@@ -1,99 +1,13 @@
-// import "./App.css";
+import Author from "./components/Author";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
 
 function App() {
 	return (
 		<div>
-			
 			<Navbar />
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxcxdddddddddddddddddd</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
-			<div>vvcxc</div>
+			<Author />
+			<Projects />
 		</div>
 	);
 }
