@@ -12,7 +12,7 @@ export const aboutMe =
 export const projects = {
 	passwordManager: {
 		name: 'Password Manager App',
-		thumbnail: "src/assets/Amal Raj.jpg",
+		thumbnail: "src/assets/password_manager_thumbnail.jpg",
 		github: "https://github.com/amalraj28/password_manager",
 		description:
 			"A mobile application to manage passwords of users. Stores the user data locally on their devices. User can also generate random password if needed.",
