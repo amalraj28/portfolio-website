@@ -10,8 +10,20 @@
     justify-content: space-between;
     display: flex ;
     padding-top: 3%;
+    padding-bottom: 10%;
   }
+}
 
-  
-  
+.projects-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.author-name {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.author-description {
+  padding-bottom: 5%;
 }

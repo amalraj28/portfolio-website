@@ -2,13 +2,13 @@ import "../styles/styles.scss";
 import { PropTypes } from "prop-types";
 
 function Project({ project }) {
-	const { name, thumbnail, liveLink, github } = project;
+	const { name, thumbnail, liveLink, github, description } = project;
 
 	return (
 		<div className="project-item">
-			<img src={thumbnail} width="50%" />
+			<img src={thumbnail} width="50%" alt={description}/>
 			<div className="item-description" >
-				<h3 className="title">{name}</h3>
+				<h4 className="title">{name}</h4>
 				{liveLink !== undefined && (
 					<a href={`${liveLink}`} target="_blank" rel="noopener noreferrer">
 						<button type="button">Live Link</button>

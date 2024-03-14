@@ -3,10 +3,10 @@ import { jobs } from "../constants/exports";
 
 function AuthorName() {
 	return (
-		<div>
+		<div className="author-name">
 			<h2 className="name-text">Heyyy, This is Amal Raj!</h2>
-			<div>
-				I&apos;m a <TypeWriter jobs={jobs}/>
+			<div className="typewriter-text">
+				I&#39;m a <TypeWriter jobs={jobs}/>
 			</div>
 		</div>
 	);
