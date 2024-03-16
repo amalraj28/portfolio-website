@@ -1,4 +1,5 @@
 import Author from "./components/Author";
+import Contact from "./components/ContactForm";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 
@@ -8,6 +9,7 @@ function App() {
 			<Navbar />
 			<Author />
 			<Projects />
+			<Contact />
 		</div>
 	);
 }

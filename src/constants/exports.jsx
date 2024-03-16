@@ -26,3 +26,5 @@ export const projects = {
 		liveLink: "https://calculator-react-tlot.onrender.com/",
 	}
 };
+
+export const emailID = "sample@gmail.com";

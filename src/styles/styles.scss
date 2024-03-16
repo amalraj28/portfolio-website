@@ -1,20 +1,20 @@
 .project-item {
   display: flex;
-  background-color: pink;
+
   justify-content: space-around; // small screen --- center large space-between
   flex-wrap: wrap;
-  width: fit-content;
+  width: 100%;
 
   .item-description {
     width: 100%;
     justify-content: space-between;
     display: flex ;
-    padding-top: 3%;
-    padding-bottom: 10%;
+    padding-top: 4%;
+    padding-bottom: 7%;
   }
 }
 
-.projects-title {
+.title {
   text-align: center;
   text-transform: uppercase;
 }
@@ -26,4 +26,26 @@
 
 .author-description {
   padding-bottom: 5%;
+}
+
+.sized-box {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.form-components {
+  padding-top: 2%;
+
+  textarea, input, button {
+    margin-left: 10svw;
+  }
+
+  textarea, input {
+    width: 80svw;
+    padding: 5% 0;
+    resize: none;
+    border-radius: 1rem;
+    padding-left: 2%;
+
+  }
 }
