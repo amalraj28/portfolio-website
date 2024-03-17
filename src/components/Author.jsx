@@ -3,7 +3,7 @@ import AuthorName from "./AuthorName";
 
 function Author() {
 	return (
-		<div className="author">
+		<section className="author">
 			<AuthorName />
 			<div className="author-description" style={{ display: "flex" }}>
 				<p className="aboutMe">{aboutMe}</p>
@@ -16,7 +16,7 @@ function Author() {
 					/>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
 

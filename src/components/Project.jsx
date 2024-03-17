@@ -9,6 +9,7 @@ function Project({ project }) {
 			<img src={thumbnail} width="50%" alt={description} />
 			<div className="item-description">
 				<h4 id="project-title">{name}</h4>
+
 				{liveLink !== undefined && (
 					<a href={`${liveLink}`} target="_blank" rel="noopener noreferrer">
 						<button type="button">Live Link</button>

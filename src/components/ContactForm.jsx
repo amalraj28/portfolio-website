@@ -14,7 +14,7 @@ function Contact() {
 		alert(`${e.formItems.name}: ${e.email}: ${e.message}`);
 	};
 	return (
-		<div className="form-div">
+		<section className="form-div">
 			<h3 className="title" id="form-title">
 				Drop a Message
 			</h3>
@@ -68,7 +68,7 @@ function Contact() {
 					</a>
 				</button>
 			</form>
-		</div>
+		</section>
 	);
 }
 
