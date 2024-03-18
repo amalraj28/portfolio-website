@@ -46,6 +46,31 @@
     resize: none;
     border-radius: 1rem;
     padding-left: 2%;
+  }
+}
 
+.skills {
+  .list-div {
+    width: 80svw;
+    margin-left: 10svw;
+    padding: 0;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      width: fit-content;
+      
+      li {
+        display: inline-flex;
+        padding-left: 5svw;
+        width: 33.33%;
+        height: 12svh;
+
+        .skill-label {
+          padding-left: 2svw;
+        }
+      }
+    }
   }
 }
