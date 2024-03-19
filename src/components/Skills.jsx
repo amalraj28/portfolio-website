@@ -16,6 +16,7 @@ import UbuntuIcon from "react-devicons/ubuntu/plain-wordmark";
 import Html5Icon from "react-devicons/html5/original-wordmark";
 import Css3Icon from "react-devicons/css3/original-wordmark";
 import VSCodeIcon from "react-devicons/vscode/original-wordmark";
+import SassOriginalIcon  from "react-devicons/sass/original";
 
 function Skills() {
 	const iconSize = "9svh";
@@ -37,6 +38,7 @@ function Skills() {
 		{ DevIcon: <NumpyIcon size={iconSize} /> },
 		{ DevIcon: <UbuntuIcon size={iconSize} /> },
 		{ DevIcon: <VSCodeIcon size={iconSize} /> },
+		{DevIcon: <SassOriginalIcon size={iconSize}/>}
 	];
 
 	return (
