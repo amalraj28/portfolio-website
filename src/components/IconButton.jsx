@@ -1,12 +1,12 @@
 import "../styles/styles.scss";
 
-function IconButton({ props, iconSize }) {
+function IconButton({ props }) {
 	const { label, DevIcon } = props;
-	console.log(label);
+
 	return (
 		<div>
-			{DevIcon({ size: iconSize })}
-			<div className="skill-label">{label}</div>
+			{DevIcon}
+			{label !== undefined && <div className="skill-label">{label}</div>}
 		</div>
 	);
 }

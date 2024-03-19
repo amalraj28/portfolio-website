@@ -65,11 +65,12 @@
         display: inline-flex;
         padding-left: 5svw;
         width: 33.33%;
-        height: 12svh;
 
         .skill-label {
-          padding-left: 2svw;
+          text-align: center;
+          font-weight: 700;
         }
+        padding-bottom: 10%;
       }
     }
   }
