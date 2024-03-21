@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Loader from "./Loader";
 
 function Contact() {
+	const [loading, setLoading] = useState(false);
+
 	useEffect(() => {
 		emailjs.init({
 			publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
@@ -27,6 +30,7 @@ function Contact() {
 
 	const sendEmail = async (e) => {
 		e.preventDefault();
+		setLoading(true);
 
 		await emailjs
 			.send(
@@ -34,8 +38,19 @@ function Contact() {
 				import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
 				templateParams
 			)
-			.then(() => alert("Your email was sent successfully :)"))
-			.catch(() => alert("Your email could not be sent :("));
+			.then((response) => {
+				console.log(response);
+				alert("Your email was sent successfully :)");
+			})
+			.catch((TypeError) => {
+				console.log(TypeError);
+				alert("You need to be connected to the internet to send email");
+			})
+			.catch((err) => {
+				console.log(err);
+				alert("You email could not be send :(");
+			})
+			.finally(() => setLoading(false));
 	};
 
 	return (
@@ -87,7 +102,7 @@ function Contact() {
 					required
 				/>
 				<div className="sized-box"></div>
-				<button type="submit">Send Message</button>
+				<button type="submit">{!loading ? "Send Message" : <Loader />}</button>
 			</form>
 		</section>
 	);
