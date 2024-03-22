@@ -8,7 +8,7 @@ function Navbar() {
 			>
 				<div className="container-fluid">
 					<div className="navbar-header">
-						<a href="#" target="_blank" className="navbar-brand" tabIndex={-1}>
+						<a href="#" className="navbar-brand" tabIndex={-1}>
 							Amal Raj
 						</a>
 					</div>
@@ -42,22 +42,27 @@ function Navbar() {
 						<div className="offcanvas-body">
 							<ul className="nav navbar-nav">
 								<li className="nav-item">
-									<a href="" className="nav-link" aria-current="page">
+									<a href="#" className="nav-link" aria-current="page">
 										Home
 									</a>
 								</li>
 								<li className="nav-item">
-									<a href="" className="nav-link">
+									<a href="#" className="nav-link">
 										Resume
 									</a>
 								</li>
 								<li className="nav-item">
-									<a href="" className="nav-link">
+									<a href="#skills" className="nav-link">
+										Skills
+									</a>
+								</li>
+								<li className="nav-item">
+									<a href="#projects" className="nav-link">
 										Projects
 									</a>
 								</li>
 								<li className="nav-item">
-									<a href="" className="nav-link">
+									<a href="#contact" className="nav-link">
 										Contact
 									</a>
 								</li>

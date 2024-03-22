@@ -42,7 +42,7 @@ function Skills() {
 	];
 
 	return (
-		<section className="skills">
+		<section id="skills">
 			<h3 className="title">Skills</h3>
 			<div className="list-div">
 				<ul>

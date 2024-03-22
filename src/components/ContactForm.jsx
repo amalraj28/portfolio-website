@@ -54,7 +54,7 @@ function Contact() {
 	};
 
 	return (
-		<section className="form-div">
+		<section className="form-div" id="contact">
 			<h3 className="title" id="form-title">
 				Drop a Message
 			</h3>
