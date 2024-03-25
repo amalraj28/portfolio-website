@@ -17,9 +17,20 @@ import Html5Icon from "react-devicons/html5/original-wordmark";
 import Css3Icon from "react-devicons/css3/original-wordmark";
 import VSCodeIcon from "react-devicons/vscode/original-wordmark";
 import SassOriginalIcon from "react-devicons/sass/original";
+import { useMediaQuery } from "@react-hook/media-query";
+import media from "../styles/_media.module.scss";
 
 function Skills() {
-	const iconSize = "9svh";
+	let iconSize;
+	const isLaptop = useMediaQuery(`screen and (min-width: ${media.lg}`);
+	const isLandscape = useMediaQuery(`screen and (min-width: ${media.$md}) and (max-width: ${media.$lg})`);
+
+	if (isLaptop) {
+		iconSize = "65%";
+	} else if (isLandscape) {
+		iconSize = "60%";
+	} else iconSize = "65%";
+
 	const iconList = [
 		{ DevIcon: <CIcon size={iconSize} /> },
 		{ DevIcon: <CppIcon size={iconSize} /> },
@@ -30,9 +41,9 @@ function Skills() {
 		{ DevIcon: <ReactIcon size={iconSize} /> },
 		{ DevIcon: <GitIcon size={iconSize} /> },
 		{ DevIcon: <GithubIcon size={iconSize} /> },
-		{ label: "Flutter", DevIcon: <FlutterIcon size={iconSize} /> },
-		{ label: "MATLAB", DevIcon: <MatlabIcon size={iconSize} /> },
-		{ label: "TensorFlow", DevIcon: <TensorflowIcon size={iconSize} /> },
+		{ DevIcon: <FlutterIcon size={iconSize} /> },
+		{ DevIcon: <MatlabIcon size={iconSize} /> },
+		{ DevIcon: <TensorflowIcon size={iconSize} /> },
 		{ DevIcon: <SQLIcon size={iconSize} /> },
 		{ DevIcon: <PandasIcon size={iconSize} /> },
 		{ DevIcon: <NumpyIcon size={iconSize} /> },

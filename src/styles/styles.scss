@@ -1,6 +1,7 @@
+@use 'media.module' as media;
+
 .project-item {
   display: flex;
-
   justify-content: space-around; // small screen --- center large space-between
   flex-wrap: wrap;
   width: 100%;
@@ -53,28 +54,36 @@
 }
 
 #skills {
+  // background-color: violet;
   .list-div {
-    width: 80svw;
-    margin-left: 10svw;
+    width: 80%;
+    margin-left: 8.5%;
     padding: 0;
+    // background-color: green;
 
     ul {
       list-style-type: none;
-      padding: 0;
+      padding-bottom: 0;
+      // background-color: red;
+      padding-left: 0;
+      padding-right: 0;
+      // padding-top: 20px;
       margin: 0;
       width: fit-content;
 
+
       li {
         display: inline-flex;
-        padding-left: 5svw;
+        // background-color: blue;
+        padding-left: 7%;
         width: 33.33%;
+        padding-bottom: 5%;
 
         .skill-label {
           text-align: center;
           font-weight: 700;
+          background-color: yellow;
         }
-
-        padding-bottom: 10%;
       }
     }
   }
@@ -95,5 +104,37 @@
   to {
     transform:
       rotate(360deg);
+  }
+}
+
+@media screen and (min-width: media.$mobile-md) and (max-width: media.$laptop-lg) {
+  #skills {
+    .list-div{
+      ul {
+        li {
+          width: 25%;
+          padding-bottom: 5%;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: media.$laptop-lg) {
+  #skills {
+    .list-div {
+
+      ul {
+        li {
+          width: 20%;
+          padding-bottom: 5%;
+        }
+
+        .skill-label {
+          font-size: medium;
+        }
+      }
+    }
   }
 }
