@@ -54,35 +54,29 @@
 }
 
 #skills {
-  // background-color: violet;
+  margin-top: 2%;
   .list-div {
     width: 80%;
-    margin-left: 8.5%;
+    margin-left: 12%;
     padding: 0;
-    // background-color: green;
 
     ul {
       list-style-type: none;
       padding-bottom: 0;
-      // background-color: red;
       padding-left: 0;
       padding-right: 0;
-      // padding-top: 20px;
       margin: 0;
       width: fit-content;
 
 
       li {
         display: inline-flex;
-        // background-color: blue;
-        padding-left: 7%;
-        width: 33.33%;
-        padding-bottom: 5%;
+        width: 25%;
+        align-self: center;
 
         .skill-label {
           text-align: center;
           font-weight: 700;
-          background-color: yellow;
         }
       }
     }
@@ -112,8 +106,8 @@
     .list-div{
       ul {
         li {
-          width: 25%;
-          padding-bottom: 5%;
+          width: 20%;
+          padding-bottom: 1%;
         }
       }
     }
@@ -126,9 +120,10 @@
     .list-div {
 
       ul {
+        margin-left: 3%;
         li {
-          width: 20%;
-          padding-bottom: 5%;
+          width: 16%;
+          padding-bottom: 1.4%;
         }
 
         .skill-label {
@@ -136,5 +131,10 @@
         }
       }
     }
+  }
+
+  .author-description {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }

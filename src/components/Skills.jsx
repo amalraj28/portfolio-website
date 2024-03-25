@@ -23,12 +23,15 @@ import media from "../styles/_media.module.scss";
 function Skills() {
 	let iconSize;
 	const isLaptop = useMediaQuery(`screen and (min-width: ${media.lg}`);
-	const isLandscape = useMediaQuery(`screen and (min-width: ${media.$md}) and (max-width: ${media.$lg})`);
+	const isTab = useMediaQuery(
+		`screen and (min-width: ${media.$md}) and (max-width: ${media.$lg})`
+	);
+	// const isPhone = useMediaQuery(`screen and (max-width: ${media.$sm})`);
 
 	if (isLaptop) {
 		iconSize = "65%";
-	} else if (isLandscape) {
-		iconSize = "60%";
+	} else if (isTab) {
+		iconSize = "65%";
 	} else iconSize = "65%";
 
 	const iconList = [
