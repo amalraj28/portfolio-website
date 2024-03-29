@@ -7,7 +7,7 @@ export const jobs = [
 ];
 
 export const aboutMe =
-	"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloribus officiis ducimus quos repudiandae unde rerum dignissimos nihil repellendus accusantium dolor neque, temporibus sint, commodi velit enim harum? Excepturi, quod?";
+	"Enthusiastic college student with a strong foundation in tech skills. Proficient in programming languages such as C++, Python, and Flutter, I am passionate about tackling challenges and finding innovative solutions. With a continuous learning mindset, I thrive on staying updated with emerging technologies. My strong problem-solving abilities, combined with organizational skills, enable me to excel in dynamic environments. Eager to contribute my skills and passion to a forward-thinking organization.";
 
 export const projects = {
 	passwordManager: {
@@ -26,3 +26,9 @@ export const projects = {
 		liveLink: "https://calculator-react-tlot.onrender.com/",
 	},
 };
+
+export const socialMediaID = {
+	linkedin: "in/amalraj2803",
+	instagram: "amal_raj28",
+	github: "amalraj28",
+}
