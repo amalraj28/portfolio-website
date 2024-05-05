@@ -19,8 +19,8 @@ export const projects = {
 	},
 
 	calculatorReact: {
-		name: "Calculator",
-		thumbnail: "src/assets/calculator_thumbnail.jpg",
+		name: "Calculator using ReactJS",
+		thumbnail: "src/assets/calculator_thumbnail.png",
 		github: "https://github.com/amalraj28/calculator-react",
 		description: "A basic calculator built using React and styled using SASS",
 		liveLink: "https://calculator-react-tlot.onrender.com/",

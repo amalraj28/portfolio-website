@@ -5,11 +5,13 @@ import Project from "./Project";
 function Projects() {
 	return (
 		<section id="projects">
-      <h2 className="title" id="project-title">projects</h2>
+			<h2 className="title">projects</h2>
 			<div className="sized-box"></div>
-			{Object.keys(projects).map((key, idx) => 
-				<Project key={idx} project={projects[key]} />
-			)}
+			<div className="project-items">
+				{Object.keys(projects).map((key, idx) => (
+					<Project key={idx} project={projects[key]} />
+				))}
+			</div>
 		</section>
 	);
 }
