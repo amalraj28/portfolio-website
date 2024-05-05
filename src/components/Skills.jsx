@@ -32,7 +32,7 @@ function Skills() {
 		iconSize = "65%";
 	} else if (isTab) {
 		iconSize = "65%";
-	} else iconSize = "65%";
+	} else iconSize = "75%";
 
 	const iconList = [
 		{ DevIcon: <CIcon size={iconSize} /> },
