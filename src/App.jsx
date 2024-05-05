@@ -11,8 +11,16 @@ function App() {
 			<Navbar />
 			<Author />
 			<Skills />
+			<div className="sized-box" />
+			<div className="sized-box" />
+			<div className="sized-box" />
 			<Projects />
+			<div className="sized-box" />
+			<div className="sized-box" />
+			<div className="sized-box" />
 			<Contact />
+			<div className="sized-box" />
+			
 			<Footer />
 		</div>
 	);
