@@ -2,9 +2,9 @@ import { projects } from "../constants/exports";
 import "../styles/styles.scss";
 import Project from "./Project";
 
-function Projects() {
+function Projects({selfRef}) {
 	return (
-		<section id="projects">
+		<section id="projects" ref={selfRef}>
 			<h2 className="title">projects</h2>
 			<div className="sized-box"></div>
 			<div className="project-items">

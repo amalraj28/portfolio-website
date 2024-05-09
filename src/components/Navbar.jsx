@@ -1,14 +1,17 @@
-function Navbar() {
+import { handleScroll } from "../constants/exports";
+
+function Navbar({ compRefs }) {
 	return (
 		<>
 			<nav
 				className="navbar navbar-expand-lg bg-dark fixed-top"
 				data-bs-theme="dark"
-				style={{top: "-0.20svh"}}
+				style={{ top: "-0.20svh" }}
+				ref={compRefs.Navbar}
 			>
 				<div className="container-fluid">
 					<div className="navbar-header">
-						<a href="#" className="navbar-brand" tabIndex={-1}>
+						<a className="navbar-brand" tabIndex={-1} onClick={() => handleScroll(compRefs.Navbar)}>
 							Amal Raj
 						</a>
 					</div>
@@ -40,29 +43,36 @@ function Navbar() {
 							></button>
 						</div>
 						<div className="offcanvas-body">
-							<ul className="nav navbar-nav">
-								<li className="nav-item">
-									<a href="#" className="nav-link" aria-current="page">
-										Home
-									</a>
-								</li>
+							<ul className="nav navbar-nav" style={{ marginLeft: "auto" }}>
 								<li className="nav-item">
 									<a href="#" className="nav-link">
 										Resume
 									</a>
 								</li>
 								<li className="nav-item">
-									<a href="#skills" className="nav-link">
+									<a
+										className="nav-link"
+										onClick={() => {
+											console.log(compRefs.Skills);
+											handleScroll(compRefs.Skills);
+										}}
+									>
 										Skills
 									</a>
 								</li>
 								<li className="nav-item">
-									<a href="#projects" className="nav-link">
+									<a
+										className="nav-link"
+										onClick={() => handleScroll(compRefs.Projects)}
+									>
 										Projects
 									</a>
 								</li>
 								<li className="nav-item">
-									<a href="#contact" className="nav-link">
+									<a
+										className="nav-link"
+										onClick={() => handleScroll(compRefs.Contact)}
+									>
 										Contact
 									</a>
 								</li>
@@ -71,7 +81,7 @@ function Navbar() {
 					</div>
 				</div>
 			</nav>
-			<div style={{paddingBottom: "70px"}}></div>
+			<div style={{ paddingBottom: "70px" }}></div>
 		</>
 	);
 }

@@ -1,12 +1,11 @@
 import { aboutMe } from "../constants/exports";
 import AuthorName from "./AuthorName";
 
-function Author() {
+function Author({selfRef}) {
 	return (
-		<section className="author">
+		<section className="author" ref={selfRef}>
 			<AuthorName />
-			<div className="author-description" style={{ display: "flex" }}>
-				<p className="aboutMe">{aboutMe}</p>
+			<div className="author-description">
 				<div className="image">
 					<img
 						src="src\assets\Amal Raj.jpg"
@@ -15,6 +14,7 @@ function Author() {
 						alt="Picture of author"
 					/>
 				</div>
+				<p className="about-me">{aboutMe}</p>
 			</div>
 		</section>
 	);

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Loader from "./Loader";
 
-function Contact() {
+function Contact({selfRef}) {
 	const [loading, setLoading] = useState(false);
 
 	useEffect(() => {
@@ -54,7 +54,7 @@ function Contact() {
 	};
 
 	return (
-		<section className="form-div" id="contact">
+		<section className="form-div" id="contact" ref={selfRef}>
 			<h3 className="title" id="form-title">
 				Drop a Message
 			</h3>

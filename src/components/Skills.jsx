@@ -20,7 +20,7 @@ import SassOriginalIcon from "react-devicons/sass/original";
 import { useMediaQuery } from "@react-hook/media-query";
 import media from "../styles/_media.module.scss";
 
-function Skills() {
+function Skills({selfRef}) {
 	let iconSize;
 	const isLaptop = useMediaQuery(`screen and (min-width: ${media.lg}`);
 	const isTab = useMediaQuery(
@@ -56,7 +56,7 @@ function Skills() {
 	];
 
 	return (
-		<section id="skills">
+		<section id="skills" ref={selfRef}>
 			<h3 className="title">Skills</h3>
 			<div className="list-div">
 				<ul>
