@@ -27,13 +27,17 @@ function Navbar({ compRefs }) {
 						<span className="navbar-toggler-icon"></span>
 					</button>
 					<div
-						className="offcanvas offcanvas-end"
+						className="offcanvas offcanvas-start"
 						aria-labelledby="offcanvasNavbarLabel"
+						data-bs-backdrop="false"
+						data-bs-scroll="true"
 						id="offcanvasNavbar"
+						data-bs-keyboard="true"
+						style={{width: "65%", opacity: 0.9}}
 					>
 						<div className="offcanvas-header">
 							<h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-								Offcanvas
+								Amal Raj
 							</h5>
 							<button
 								type="button"
