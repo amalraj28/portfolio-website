@@ -34,7 +34,6 @@ export const socialMediaID = {
 };
 
 export const handleScroll = (ref) => {
-	console.log(`Scrolled to value ${Math.max(0, ref.current.offsetTop - 100)}`);
 	window.scrollTo({
 		top: Math.max(0, ref.current.offsetTop - 100),
 		left: 0,

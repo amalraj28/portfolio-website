@@ -23,7 +23,7 @@ function App() {
 	return (
 		<div>
 			<Navbar compRefs={refObjects} />
-			<Author selfRef={refObjects.Author}/>
+			<Author selfRef={refObjects.Author} />
 			<div className="sized-box" />
 			<Skills selfRef={refObjects.Skills} />
 			<div className="sized-box" />
@@ -31,7 +31,6 @@ function App() {
 			<div className="sized-box" />
 			<div className="sized-box" />
 			<Contact selfRef={refObjects.Contact} />
-			<div className="sized-box" />
 			<Footer selfRef={refObjects.Footer} />
 		</div>
 	);

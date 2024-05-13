@@ -1,21 +1,37 @@
 @use 'media.module' as media;
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
 
 .project-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // background-color: green;
 }
 
 .navbar {
-  a:hover {
-    cursor: pointer;
+  a {
+    color: white;
+    border: 2px solid rgba(var(--bs-dark-rgb));
+    
+    &:hover {
+      cursor: pointer;
+    }
+
   }
 }
 
+.navbar .current {
+  border-color: blue;
+  background-color: lightblue;
+  color: red;
+  border-width: 2px;
+  height: 118%;
+  border-top: 120%;
+  backdrop-filter: fill;
+}
+
 #project-title {
-  
-  // display: flex;
   margin-left: 8svw;
 }
 
@@ -27,7 +43,6 @@
   border-color: black;
   border-radius: 40px;
   margin-bottom: 10px;
-  // background-color: blue;
   width: 80%;
 
   img {
@@ -36,7 +51,6 @@
 
   .item-description {
     width: 100%;
-    justify-content: space-between;
     padding-top: 4%;
     padding-bottom: 7%;
 
@@ -44,7 +58,6 @@
       margin-left: 8svw;
     }
   }
-
 }
 
 .title {
@@ -54,11 +67,19 @@
 
 .author-name {
   text-align: center;
-  padding-bottom: 5%;
 }
 
 .author-description {
-  padding-bottom: 5%;
+  margin-top: 0%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
 }
 
 .sized-box {
@@ -89,8 +110,8 @@
   margin-top: 2%;
 
   .list-div {
-    width: 80%;
-    margin-left: 12%;
+    width: 85%;
+    margin-left: 10%;
     padding: 0;
 
     ul {
@@ -138,7 +159,6 @@
   margin-top: 6%;
   padding: 5%;
   padding-bottom: 8%;
-  // padding-bottom: 3%;
   background-color: lightblue;
   text-align: center;
 }
@@ -156,6 +176,10 @@
 }
 
 @media screen and (min-width: media.$mobile-md) and (max-width: media.$laptop-lg) {
+  .project-item {
+    width: 30%;
+  }
+
   #skills {
     .list-div {
       ul {
@@ -172,12 +196,42 @@
   .footer-text {
     font-size: large;
   }
+
   .social-media {
     margin: 3% 35% 0 35%;
   }
 }
 
 @media only screen and (min-width: media.$laptop-lg) {
+  .project-items {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 60px;
+    row-gap: 30px;
+    // background-color: red;
+    margin-bottom: 0;
+    width: 55%;
+    margin-left: 22svw;
+  }
+
+  .project-item {
+    width: 100%;
+
+    .item-description {
+      h4 {
+        font-size: large;
+      }
+
+      button {
+        margin-left: 2svw;
+      }
+    }
+  }
+
+  #project-title {
+    margin-left: 2svw;
+  }
+
   #skills {
     .list-div {
 
@@ -227,5 +281,4 @@
   .social-media {
     margin: 2% 36% 0 36%;
   }
-
 }

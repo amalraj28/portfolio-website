@@ -1,6 +1,29 @@
+import { useReducer } from "react";
 import { handleScroll } from "../constants/exports";
 
+const initState = {
+	skills: false,
+	projects: false,
+	contact: false,
+};
+
+const reducer = (currState, action) => {
+	switch (action) {
+		case "skills":
+			return { ...initState, skills: true };
+		case "projects":
+			return { ...initState, projects: true };
+		case "contact":
+			return { ...initState, contact: true };
+		default:
+			return currState;
+	}
+};
+
 function Navbar({ compRefs }) {
+	const [state, dispatch] = useReducer(reducer, initState);
+	const extraClasses = "current";
+
 	return (
 		<>
 			<nav
@@ -11,7 +34,11 @@ function Navbar({ compRefs }) {
 			>
 				<div className="container-fluid">
 					<div className="navbar-header">
-						<a className="navbar-brand" tabIndex={-1} onClick={() => handleScroll(compRefs.Navbar)}>
+						<a
+							className="navbar-brand"
+							tabIndex={-1}
+							onClick={() => handleScroll(compRefs.Navbar)}
+						>
 							Amal Raj
 						</a>
 					</div>
@@ -29,16 +56,16 @@ function Navbar({ compRefs }) {
 					<div
 						className="offcanvas offcanvas-start"
 						aria-labelledby="offcanvasNavbarLabel"
-						data-bs-backdrop="false"
+						data-bs-backdrop="true"
 						data-bs-scroll="true"
 						id="offcanvasNavbar"
 						data-bs-keyboard="true"
-						style={{width: "65%", opacity: 0.9}}
+						style={{ width: "50%", opacity: 0.9 }}
 					>
 						<div className="offcanvas-header">
-							<h5 className="offcanvas-title" id="offcanvasNavbarLabel">
+							{/* <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
 								Amal Raj
-							</h5>
+							</h5> */}
 							<button
 								type="button"
 								className="btn-close"
@@ -49,16 +76,21 @@ function Navbar({ compRefs }) {
 						<div className="offcanvas-body">
 							<ul className="nav navbar-nav" style={{ marginLeft: "auto" }}>
 								<li className="nav-item">
-									<a href="#" className="nav-link">
+									<a
+										href={import.meta.env.VITE_RESUME}
+										target="_blank"
+										className="nav-link"
+										onClick={() => dispatch("resume")}
+									>
 										Resume
 									</a>
 								</li>
 								<li className="nav-item">
 									<a
-										className="nav-link"
+										className={`nav-link ${state.skills && extraClasses}`}
 										onClick={() => {
-											console.log(compRefs.Skills);
 											handleScroll(compRefs.Skills);
+											dispatch("skills");
 										}}
 									>
 										Skills
@@ -66,16 +98,22 @@ function Navbar({ compRefs }) {
 								</li>
 								<li className="nav-item">
 									<a
-										className="nav-link"
-										onClick={() => handleScroll(compRefs.Projects)}
+										className={`nav-link ${state.projects && extraClasses}`}
+										onClick={() => {
+											handleScroll(compRefs.Projects);
+											dispatch("projects");
+										}}
 									>
 										Projects
 									</a>
 								</li>
 								<li className="nav-item">
 									<a
-										className="nav-link"
-										onClick={() => handleScroll(compRefs.Contact)}
+										className={`nav-link ${state.contact && extraClasses}`}
+										onClick={() => {
+											handleScroll(compRefs.Contact);
+											dispatch("contact");
+										}}
 									>
 										Contact
 									</a>
