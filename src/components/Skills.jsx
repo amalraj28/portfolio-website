@@ -10,7 +10,7 @@ import CppIcon from "react-devicons/cplusplus/original";
 import JavascriptIcon from "react-devicons/javascript/original";
 import TensorflowIcon from "react-devicons/tensorflow/original";
 import PandasIcon from "react-devicons/pandas/original-wordmark";
-import NumpyIcon from "react-devicons/numpy/original-wordmark";
+import NumpyIcon from "react-devicons/numpy/original";
 import SQLIcon from "react-devicons/mysql/original-wordmark";
 import UbuntuIcon from "react-devicons/ubuntu/plain-wordmark";
 import Html5Icon from "react-devicons/html5/original-wordmark";
@@ -20,7 +20,7 @@ import SassOriginalIcon from "react-devicons/sass/original";
 import { useMediaQuery } from "@react-hook/media-query";
 import media from "../styles/_media.module.scss";
 
-function Skills({selfRef}) {
+function Skills({ selfRef }) {
 	let iconSize;
 	const isLaptop = useMediaQuery(`screen and (min-width: ${media.lg}`);
 	const isTab = useMediaQuery(
@@ -29,35 +29,36 @@ function Skills({selfRef}) {
 	// const isPhone = useMediaQuery(`screen and (max-width: ${media.$sm})`);
 
 	if (isLaptop) {
-		iconSize = "65%";
+		iconSize = "55%";
 	} else if (isTab) {
 		iconSize = "65%";
 	} else iconSize = "75%";
 
 	const iconList = [
-		{ DevIcon: <CIcon size={iconSize} /> },
-		{ DevIcon: <CppIcon size={iconSize} /> },
-		{ DevIcon: <PythonIcon size={iconSize} /> },
-		{ DevIcon: <Html5Icon size={iconSize} /> },
-		{ DevIcon: <Css3Icon size={iconSize} /> },
-		{ DevIcon: <JavascriptIcon size={iconSize} /> },
-		{ DevIcon: <ReactIcon size={iconSize} /> },
-		{ DevIcon: <GitIcon size={iconSize} /> },
-		{ DevIcon: <GithubIcon size={iconSize} /> },
-		{ DevIcon: <FlutterIcon size={iconSize} /> },
-		{ DevIcon: <MatlabIcon size={iconSize} /> },
-		{ DevIcon: <TensorflowIcon size={iconSize} /> },
-		{ DevIcon: <SQLIcon size={iconSize} /> },
-		{ DevIcon: <PandasIcon size={iconSize} /> },
-		{ DevIcon: <NumpyIcon size={iconSize} /> },
-		{ DevIcon: <UbuntuIcon size={iconSize} /> },
-		{ DevIcon: <VSCodeIcon size={iconSize} /> },
-		{ DevIcon: <SassOriginalIcon size={iconSize} /> },
+		{ DevIcon: <CIcon size={iconSize} className="skills-icon" /> },
+		{ DevIcon: <CppIcon size={iconSize} className="skills-icon" /> },
+		{ DevIcon: <PythonIcon size={iconSize} className="skills-icon" /> },
+		{ DevIcon: <Html5Icon size={iconSize} className="skills-icon" /> },
+		{ DevIcon: <Css3Icon size={iconSize} className="skills-icon" /> },
+		{ DevIcon: <JavascriptIcon size={iconSize} className="skills-icon" /> },
+		{ DevIcon: <ReactIcon size={iconSize} className="skills-icon" /> },
+		{ DevIcon: <GitIcon size={iconSize} className="skills-icon" /> },
+		{ DevIcon: <GithubIcon size={iconSize} className="skills-icon" /> },
+		{ DevIcon: <FlutterIcon size={iconSize} className="skills-icon" /> },
+		{ DevIcon: <MatlabIcon size={iconSize} className="skills-icon" /> },
+		{ DevIcon: <TensorflowIcon size={iconSize} className="skills-icon" /> },
+		{ DevIcon: <SQLIcon size={iconSize} className="skills-icon" /> },
+		{ DevIcon: <PandasIcon size={iconSize} className="skills-icon" /> },
+		{ DevIcon: <NumpyIcon size={iconSize} className="skills-icon" /> },
+		{ DevIcon: <UbuntuIcon size={iconSize} className="skills-icon" /> },
+		{ DevIcon: <VSCodeIcon size={iconSize} className="skills-icon" /> },
+		{ DevIcon: <SassOriginalIcon size={iconSize} className="skills-icon" /> },
 	];
 
 	return (
 		<section id="skills" ref={selfRef}>
 			<h3 className="title">Skills</h3>
+			<div className="sized-box"></div>
 			<div className="list-div">
 				<ul>
 					{iconList.map((item, idx) => {

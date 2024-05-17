@@ -1,11 +1,12 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+#root {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 2;
+  font-weight: 500;
+  font-size: large;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #171724;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

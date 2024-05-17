@@ -132,6 +132,10 @@
           text-align: center;
           font-weight: 700;
         }
+        
+        .skills-icon:hover {
+          background-color: white;
+        }
       }
     }
   }
@@ -164,6 +168,7 @@
 }
 
 .footer-text {
+  color: rgb(115, 37, 37);
   font-size: small;
   font-weight: 600;
   font-style: italic;
