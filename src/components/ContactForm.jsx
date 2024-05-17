@@ -42,10 +42,6 @@ function Contact({selfRef}) {
 				console.log(response);
 				alert("Your email was sent successfully :)");
 			})
-			.catch((TypeError) => {
-				console.log(TypeError);
-				alert("You need to be connected to the internet to send email");
-			})
 			.catch((err) => {
 				console.log(err);
 				alert("You email could not be send :(");
