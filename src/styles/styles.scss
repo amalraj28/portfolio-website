@@ -10,29 +10,42 @@
 }
 
 .navbar {
+  position: fixed;
+  background-color:rgb(0, 9, 32) ;
+  box-shadow: 10px 2px 9px 15px rgb(0, 9, 32) ;
   a {
     color: white;
-    border: 2px solid rgba(var(--bs-dark-rgb));
-    
+    margin-right: 40px;
     &:hover {
       cursor: pointer;
+      color: #0ef;
     }
+    transition: .3s;
+    opacity: 1;
+   animation: SlideBottom .5s ease; 
 
   }
 }
+.navbar .navbar-brand{
+  position: relative;
+  margin-left: 40px;
+  font-weight: 600;
+  font-size:25px;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
 
+}
+.navitem{
+  justify-content: space-between;
+}
 .navbar .current {
-  border-color: blue;
-  background-color: lightblue;
-  color: red;
-  border-width: 2px;
-  height: 118%;
-  border-top: 120%;
-  backdrop-filter: fill;
+  border-color: rgba(0, 0, 0, 0.336);
+  color:#0ef;
+  text-decoration:dashed;
 }
 
 #project-title {
-  margin-left: 8svw;
+  margin-left: 10svw;
 }
 
 .project-item {
@@ -43,12 +56,29 @@
   border-color: black;
   border-radius: 40px;
   margin-bottom: 10px;
-  width: 80%;
+  width: 120%;
 
   img {
     margin-top: 5px;
+    width: 32vh;
+    height: 45vh;
   }
-
+  .card{
+    background-color: rgba(0, 0, 0, 0.541);
+    align-items: center;
+    color: white;
+  }
+  .card-body{
+    background-color: transparent;
+    button {
+      transition: .3s ease-in;
+      &:hover{
+        background-color: #0ef;
+        box-shadow: 1px 1px 11px 2px #0ef;
+        border: 0cap;
+      }
+    }
+  }
   .item-description {
     width: 100%;
     padding-top: 4%;
@@ -56,6 +86,9 @@
 
     button {
       margin-left: 8svw;
+      &:hover{
+        background-color: #0ef;
+      }
     }
   }
 }
@@ -64,9 +97,38 @@
   text-align: center;
   text-transform: uppercase;
 }
+.author{
+  height: 90vh;
+  padding: 6% 6% 0% 6% ;
+  
+  
+}
+.image {
+  display: flex;
+  
+  img{
+    border-radius: 50%;
+    box-shadow:2px 2px 2px 2px  rgba(3, 3, 3, 0.438);
+    width:100px;
+    height:100px;
 
+    transition: .3s;
+    opacity: 1;
+   animation: SlideTop .5s ease;
+  }
+}
 .author-name {
-  text-align: center;
+  h3{
+    font-size: 15px;
+    font-weight: 700;
+  }
+  h1{
+    font-size: 36px;
+    font-weight: 700;
+  }
+  margin-top: 0%;
+  margin-bottom: 0;
+  animation: slideRight 1s ease forwards;
 }
 
 .author-description {
@@ -76,39 +138,60 @@
   margin-bottom: 0;
   text-align: justify;
 }
-
-.image {
-  display: flex;
-  justify-content: center;
+.about-me{
+  font-size: 13px;
+  animation: slideLeft 1s ease forwards;
 }
+.author-details{
+  position: relative;
+  top: 15%;
+  bottom: 50%;
+}
+.typewritter-span{
+  color: #0ef;
+}
+
 
 .sized-box {
   padding-top: 1%;
   padding-bottom: 1%;
 }
 
-.form-components {
-  padding-top: 2%;
+// .form-components {
+//   padding-top: 2%;
 
-  textarea,
-  input,
-  button {
-    margin-left: 10svw;
-  }
+//   textarea,
+//   input,
+//   button {
+//     margin-left: 10svw;
+//   }
 
-  textarea,
-  input {
-    width: 80svw;
-    padding: 3% 2%;
-    resize: none;
-    border-radius: 1rem;
-    padding-left: 2%;
-  }
+//   textarea,
+//   input {
+//     width: 80svw;
+//     padding: 3% 2%;
+//     resize: none;
+//     border-radius: 1rem;
+//     padding-left: 2%;
+//   }
+// }
+.form-row{
+  display: flex;
 }
-
+.input-form{
+  margin: 5px 5px 5px 5px;
+}
 #skills {
+  padding-top: 5%;
+  background-color: rgba(98, 99, 99, 0.356);
   margin-top: 2%;
-
+  height: 80vh;
+  border-radius: 70px 70px 0 0 ;
+  .title{
+    animation: slideRignt;
+    font-size: 32px;
+    font-weight: 700;
+  }
   .list-div {
     width: 85%;
     margin-left: 10%;
@@ -131,10 +214,15 @@
         .skill-label {
           text-align: center;
           font-weight: 700;
+          
         }
         
         .skills-icon:hover {
-          background-color: white;
+          background-color: #0ef;
+          box-shadow: 1px 1px 11px 2px #0ef;
+          border: 0cap;
+          border-radius: 20px;
+          
         }
       }
     }
@@ -158,15 +246,56 @@
       rotate(360deg);
   }
 }
+@keyframes slideRight {
+  0%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideLeft {
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes SlideBottom {
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  
+}
+@keyframes SlideTop {
+  0%{
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  
+}
 
 .footer {
-  margin-top: 6%;
+  margin-top: 1%;
   padding: 5%;
   padding-bottom: 8%;
   background-color: lightblue;
   text-align: center;
 }
-
 .footer-text {
   color: rgb(115, 37, 37);
   font-size: small;
@@ -195,6 +324,66 @@
       }
     }
   }
+}
+@media screen and (min-width: media.$mobile-sm){
+
+  .author-details{
+    position: relative;
+    top: 30%;
+    bottom: 50%;
+  }
+
+}
+@media screen and (min-width: media.$laptop-lg) and (min-width: media.$laptop-xl){
+
+ 
+
+  .author-name {
+    h3{
+      font-size: 32px;
+      font-weight: 700;
+    }
+    h1{
+      font-size: 56px;
+      font-weight: 700;
+    }
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0;
+    animation: slideRight 1s ease forwards;
+  }
+  
+  .author-description {
+    margin-top: 0%;
+    
+    margin-bottom: 0;
+    text-align: justify;
+  }
+  .about-me{
+    width: 80%;
+    font-size: 15px;
+    animation: slideLeft 1s ease forwards;
+  }
+  .typewritter-span{
+    color: #0ef;
+  }
+
+  .image {
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 2%;
+    display: flex;
+    
+    img{
+      border-radius: 50%;
+      box-shadow:2px 2px 2px 2px  rgba(3, 3, 3, 0.438);
+      width:150px;
+      height:150px;
+    }
+  }
+
 }
 
 @media screen and (orientation: landscape) {
@@ -256,7 +445,7 @@
   }
 
   .author-description {
-    margin-left: 10%;
+    margin-left: 0%;
     margin-right: 10%;
   }
 

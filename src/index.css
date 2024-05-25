@@ -1,13 +1,12 @@
 #root {
-  font-family: 'Times New Roman', Times, serif;
+  font-family:'poppins' , sans-serif;
   line-height: 2;
   font-weight: 500;
   font-size: large;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #171724;
-
+ background-color:rgb(0, 9, 32) ;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
