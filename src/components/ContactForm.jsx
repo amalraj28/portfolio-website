@@ -58,7 +58,7 @@ function Contact({ selfRef }) {
 				<div style={{ paddingTop: "10px" }} />
 				<div className="form-group">
 					<input
-						className="form-control "
+						className="form-control"
 						placeholder="Your Name"
 						value={formItems["name"]}
 						onChange={(e) =>

@@ -178,9 +178,13 @@
 }
 
 .form-control {
-  background-color: rgb(0, 9, 32);
-  color: white;
-  font-weight: 500;
+  background-color: rgb(0, 9, 32) !important;
+  color: white !important;
+  font-weight: 500 !important;
+
+  &::placeholder {
+    color: rgb(131, 152, 153);
+  }
 }
 
 .form-row {
