@@ -27,7 +27,7 @@ function Navbar({ compRefs }) {
 	return (
 		<>
 			<nav
-				className="navbar navbar-expand-lg  fixed-top"
+				className="navbar navbar-expand-lg fixed-top"
 				data-bs-theme="dark"
 				style={{ top: "-0.20svh" }}
 				ref={compRefs.Navbar}
@@ -62,16 +62,10 @@ function Navbar({ compRefs }) {
 						data-bs-keyboard="true"
 						style={{ width: "50%", opacity: 0.9 }}
 					>
-						
-						<div className="offcanvas-body  navitem">
+						<div className="offcanvas-body navitem">
 							<ul className="nav navbar-nav" style={{ marginLeft: "auto" }}>
-							<li className="nav-item">
-									<a
-										href="#"
-										target="_blank"
-										className="nav-link"
-										
-									>
+								<li className="nav-item">
+									<a href="#" target="_blank" className="nav-link">
 										Home
 									</a>
 								</li>

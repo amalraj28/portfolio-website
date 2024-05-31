@@ -50,7 +50,7 @@ function Contact({ selfRef }) {
 	};
 
 	return (
-		<div className="form-components" rel={selfRef}>
+		<div className="form-components" ref={selfRef}>
 			<form onSubmit={sendEmail}>
 				<h3 className="title" id="form-title">
 					Drop a Message
