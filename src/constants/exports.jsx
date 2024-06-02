@@ -12,7 +12,7 @@ export const aboutMe =
 export const projects = {
 	passwordManager: {
 		name: "Password Manager App",
-		thumbnail: "src/assets/password_manager_thumbnail.jpg",
+		thumbnail: "/assets/password_manager_thumbnail.jpg",
 		github: "https://github.com/amalraj28/password_manager",
 		description:
 			"A mobile application to manage passwords of users. Stores the user data locally on their devices. User can also generate random password if needed.",
@@ -20,7 +20,7 @@ export const projects = {
 
 	calculatorReact: {
 		name: "Calculator using ReactJS",
-		thumbnail: "src/assets/calculator_thumbnail.png",
+		thumbnail: "/assets/calculator_thumbnail.png",
 		github: "https://github.com/amalraj28/calculator-react",
 		description: "A basic calculator built using React and styled using SASS",
 		liveLink: "https://calculator-react-tlot.onrender.com/",

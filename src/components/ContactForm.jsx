@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Loader from "./Loader";
 
-function Contact({selfRef}) {
+function Contact({ selfRef }) {
 	const [loading, setLoading] = useState(false);
 
 	useEffect(() => {
@@ -50,57 +50,64 @@ function Contact({selfRef}) {
 	};
 
 	return (
-		<section className="form-div" id="contact" ref={selfRef}>
-			<h3 className="title" id="form-title">
-				Drop a Message
-			</h3>
-			<form className="form-components" onSubmit={sendEmail}>
-				<input
-					placeholder="Your name"
-					value={formItems["name"]}
-					onChange={(e) => setFormItems({ ...formItems, name: e.target.value })}
-					type="text"
-					className="name-input"
-					required
-				/>
-				<div className="sized-box"></div>
-				<input
-					placeholder="Email ID"
-					type="email"
-					value={formItems["email"]}
-					onChange={(e) =>
-						setFormItems({ ...formItems, email: e.target.value })
-					}
-					className="email-input"
-					required
-				/>
-				<div className="sized-box"></div>
-				<input
-					placeholder="Subject of mail"
-					type="text"
-					value={formItems["subject"]}
-					onChange={(e) =>
-						setFormItems({ ...formItems, subject: e.target.value })
-					}
-					className="subject-input"
-					required
-				/>
-				<div className="sized-box"></div>
-				<textarea
-					placeholder="Message"
-					type="text"
-					rows={7}
-					value={formItems["message"]}
-					onChange={(e) =>
-						setFormItems({ ...formItems, message: e.target.value })
-					}
-					className="message-input"
-					required
-				/>
-				<div className="sized-box"></div>
-				<button type="submit">{!loading ? "Send Message" : <Loader />}</button>
+		<div className="form-components" ref={selfRef}>
+			<form onSubmit={sendEmail}>
+				<h3 className="title" id="form-title">
+					Drop a Message
+				</h3>
+				<div style={{ paddingTop: "10px" }} />
+				<div className="form-group">
+					<input
+						className="form-control"
+						placeholder="Your Name"
+						value={formItems["name"]}
+						onChange={(e) =>
+							setFormItems({ ...formItems, name: e.target.value })
+						}
+						type="text"
+						required
+					/>
+					<div style={{ paddingTop: "5px" }} />
+					<input
+						type="email"
+						className="form-control email-input input-form"
+						placeholder="Email ID"
+						value={formItems["email"]}
+						onChange={(e) =>
+							setFormItems({ ...formItems, email: e.target.value })
+						}
+						required
+					/>
+					<div style={{ paddingTop: "5px" }} />
+					<input
+						placeholder="Subject of mail"
+						type="text"
+						value={formItems["subject"]}
+						onChange={(e) =>
+							setFormItems({ ...formItems, subject: e.target.value })
+						}
+						className="subject-input form-control input-form"
+						required
+					/>
+					<div style={{ paddingTop: "5px" }} />
+					<textarea
+						placeholder="Message"
+						type="text"
+						rows={7}
+						value={formItems["message"]}
+						onChange={(e) =>
+							setFormItems({ ...formItems, message: e.target.value })
+						}
+						className="message-input form-control input-form"
+						required
+					/>
+					<div style={{ paddingTop: "7px" }} />
+					<button className="btn btn-primary input-form" type="submit">
+						{!loading ? "Send Message" : <Loader />}
+					</button>
+				</div>
 			</form>
-		</section>
+		</div>
 	);
 }
 
