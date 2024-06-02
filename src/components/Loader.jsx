@@ -1,4 +1,4 @@
-import loaderIcon from "../assets/loader.svg";
+import loaderIcon from "/assets/loader.svg";
 import "../styles/styles.scss"
 
 function Loader() {
