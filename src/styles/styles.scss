@@ -66,7 +66,7 @@
 
   img {
     margin-top: 5px;
-    width: 32vh;
+    width: auto;
     height: 45vh;
   }
 
@@ -108,13 +108,6 @@
 .title {
   text-align: center;
   text-transform: uppercase;
-}
-
-.author {
-  height: 90vh;
-  padding: 6% 6% 0% 6%;
-
-
 }
 
 .image {
@@ -334,7 +327,7 @@
   justify-content: space-evenly;
 }
 
-@media screen and (min-width: media.$mobile-md) and (max-width: media.$laptop-lg) {
+@media screen and (min-width: media.$mobile-md) and (width < media.$laptop-lg) {
   .project-item {
     width: 30%;
   }
@@ -352,7 +345,6 @@
 }
 
 @media screen and (min-width: media.$mobile-sm) {
-
   .author-details {
     position: relative;
     top: 30%;
@@ -361,9 +353,10 @@
 
 }
 
-@media screen and (min-width: media.$laptop-lg) and (min-width: media.$laptop-xl) {
-
-
+@media screen and (min-width: media.$laptop-lg) {
+  .author {
+    padding: 7svw 7svw 0svw 8svw;
+  }
 
   .author-name {
     h3 {
@@ -380,6 +373,7 @@
     margin-left: 0%;
     margin-right: 0%;
     margin-bottom: 0;
+    width: 40svw;
     animation: slideRight 1s ease forwards;
   }
 
@@ -415,19 +409,6 @@
     }
   }
 
-}
-
-@media screen and (orientation: landscape) {
-  .footer-text {
-    font-size: large;
-  }
-
-  .social-media {
-    margin: 3% 35% 0 35%;
-  }
-}
-
-@media only screen and (min-width: media.$laptop-lg) {
   .project-items {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -505,5 +486,15 @@
 
   .social-media {
     margin: 2% 36% 0 36%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .footer-text {
+    font-size: large;
+  }
+
+  .social-media {
+    margin: 3% 35% 0 35%;
   }
 }
