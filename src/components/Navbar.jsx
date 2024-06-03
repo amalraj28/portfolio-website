@@ -21,8 +21,7 @@ const reducer = (currState, action) => {
 };
 
 function Navbar({ compRefs }) {
-	const [state, dispatch] = useReducer(reducer, initState);
-	const extraClasses = "current";
+	const [, dispatch] = useReducer(reducer, initState);
 
 	return (
 		<>
@@ -33,17 +32,8 @@ function Navbar({ compRefs }) {
 				ref={compRefs.Navbar}
 			>
 				<div className="container-fluid">
-					<div className="navbar-header col-md-6">
-						<a
-							className="navbar-brand"
-							tabIndex={-1}
-							onClick={() => handleScroll(compRefs.Navbar)}
-						>
-							Amal Raj
-						</a>
-					</div>
 					<button
-						className="navbar-toggler"
+						className="navbar-toggler ms-auto"
 						data-bs-toggle="offcanvas"
 						type="button"
 						data-bs-target="#offcanvasNavbar"
@@ -65,7 +55,10 @@ function Navbar({ compRefs }) {
 						<div className="offcanvas-body navitem">
 							<ul className="nav navbar-nav" style={{ marginLeft: "auto" }}>
 								<li className="nav-item">
-									<a href="#" target="_blank" className="nav-link">
+									<a
+										className="nav-link"
+										onClick={() => handleScroll(compRefs.Navbar)}
+									>
 										Home
 									</a>
 								</li>
@@ -81,7 +74,7 @@ function Navbar({ compRefs }) {
 								</li>
 								<li className="nav-item">
 									<a
-										className={`nav-link ${state.skills && extraClasses}`}
+										className="nav-link"
 										onClick={() => {
 											handleScroll(compRefs.Skills);
 											dispatch("skills");
@@ -92,7 +85,7 @@ function Navbar({ compRefs }) {
 								</li>
 								<li className="nav-item">
 									<a
-										className={`nav-link ${state.projects && extraClasses}`}
+										className="nav-link"
 										onClick={() => {
 											handleScroll(compRefs.Projects);
 											dispatch("projects");
@@ -103,7 +96,7 @@ function Navbar({ compRefs }) {
 								</li>
 								<li className="nav-item">
 									<a
-										className={`nav-link ${state.contact && extraClasses}`}
+										className="nav-link"
 										onClick={() => {
 											handleScroll(compRefs.Contact);
 											dispatch("contact");
