@@ -70,7 +70,7 @@ function Contact({ selfRef }) {
 					<div style={{ paddingTop: "5px" }} />
 					<input
 						type="email"
-						className="form-control email-input input-form"
+						className="form-control email-input"
 						placeholder="Email ID"
 						value={formItems["email"]}
 						onChange={(e) =>
@@ -86,7 +86,7 @@ function Contact({ selfRef }) {
 						onChange={(e) =>
 							setFormItems({ ...formItems, subject: e.target.value })
 						}
-						className="subject-input form-control input-form"
+						className="subject-input form-control"
 						required
 					/>
 					<div style={{ paddingTop: "5px" }} />
@@ -98,11 +98,11 @@ function Contact({ selfRef }) {
 						onChange={(e) =>
 							setFormItems({ ...formItems, message: e.target.value })
 						}
-						className="message-input form-control input-form"
+						className="message-input form-control"
 						required
 					/>
 					<div style={{ paddingTop: "7px" }} />
-					<button className="btn btn-primary input-form" type="submit">
+					<button className="btn btn-primary" type="submit">
 						{!loading ? "Send Message" : <Loader />}
 					</button>
 				</div>

@@ -22,11 +22,10 @@ import media from "../styles/_media.module.scss";
 
 function Skills({ selfRef }) {
 	let iconSize;
-	const isLaptop = useMediaQuery(`screen and (min-width: ${media.lg}`);
+	const isLaptop = useMediaQuery(`screen and (min-width: ${media.lg})`);
 	const isTab = useMediaQuery(
-		`screen and (min-width: ${media.$md}) and (max-width: ${media.$lg})`
+		`screen and (min-width: ${media.md}) and (max-width: ${media.lg})`
 	);
-	// const isPhone = useMediaQuery(`screen and (max-width: ${media.$sm})`);
 
 	if (isLaptop) {
 		iconSize = "55%";
