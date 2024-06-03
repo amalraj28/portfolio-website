@@ -356,7 +356,6 @@
   }
 
   .author-name {
-    // font-family: Georgia, 'Times New Roman', Times, serif;
     h3 {
       font-size: 32px;
       font-weight: 700;
@@ -436,6 +435,11 @@
   }
 
   #skills {
+    padding-top: 2%;
+    margin: 2% 5% 2% 5%;
+    height: auto;
+    border-radius: 70px 70px;
+
     .list-div {
 
       ul {
@@ -469,7 +473,8 @@
   }
 
   .footer {
-    padding: 5%;
+    margin-top: 3svw;
+    padding: 3.5% 3% 3% 3%;
   }
 
   .footer-text {
