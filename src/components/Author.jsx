@@ -1,11 +1,16 @@
 import AuthorName from "./AuthorName";
 import { aboutMe } from "../constants/exports";
+import { useMediaQuery } from "@react-hook/media-query";
+import media from "../styles/_media.module.scss";
+
 
 function Author({ selfRef }) {
-	
+	const extraClassName = "row";
+	const isLaptop = useMediaQuery(`screen and (min-width: ${media.lg})`)
+
 	return (
 		<section className="author" ref={selfRef}>
-			<div className="row author-details">
+			<div className={`author-details ${isLaptop && extraClassName}`}>
 				<AuthorName />
 				<div className="image col-lg-5">
 					<img src="/assets/Amal Raj.jpg" alt="Picture of author" />
