@@ -41,6 +41,9 @@ function Contact({ selfRef }) {
 			.then((response) => {
 				console.log(response);
 				alert("Your email was sent successfully :)");
+				setFormItems(() => {
+					return { name: "", email: "", message: "", subject: "" };
+				});
 			})
 			.catch((err) => {
 				console.log(err);
