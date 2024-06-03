@@ -356,6 +356,7 @@
   }
 
   .author-name {
+    // font-family: Georgia, 'Times New Roman', Times, serif;
     h3 {
       font-size: 32px;
       font-weight: 700;
@@ -375,15 +376,14 @@
   }
 
   .author-description {
-    margin-top: 0%;
-
-    margin-bottom: 0;
+    margin: 1svw 10% 0 0;
     text-align: justify;
   }
 
   .about-me {
     width: 80%;
-    font-size: 15px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
     animation: slideLeft 1s ease forwards;
   }
 
@@ -451,11 +451,6 @@
         }
       }
     }
-  }
-
-  .author-description {
-    margin-left: 0%;
-    margin-right: 10%;
   }
 
   .form-components {

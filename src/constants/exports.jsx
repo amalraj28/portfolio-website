@@ -7,7 +7,7 @@ export const jobs = [
 ];
 
 export const aboutMe =
-	"Enthusiastic college student with a strong foundation in tech skills. Proficient in programming languages such as C++, Python, and Flutter, I am passionate about tackling challenges and finding innovative solutions. With a continuous learning mindset, I thrive on staying updated with emerging technologies. My strong problem-solving abilities, combined with organizational skills, enable me to excel in dynamic environments. Eager to contribute my skills and passion to a forward-thinking organization.";
+	"Enthusiastic and skilled college student with a robust foundation in technology and a passion for innovation. Proficient in a diverse array of programming languages including C++, Python, and Flutter, I thrive on tackling challenges and devising creative solutions. My continuous learning mindset keeps me at the forefront of emerging technologies, while my strong problem-solving abilities and organizational skills enable me to excel in dynamic environments. With experience in front-end web development and deep learning projects, I am eager to contribute my expertise and enthusiasm to a forward-thinking organization. Let's collaborate to drive technological advancements and achieve impactful results.";
 
 export const projects = {
 	passwordManager: {
