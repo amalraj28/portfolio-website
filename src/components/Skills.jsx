@@ -24,7 +24,7 @@ function Skills({ selfRef }) {
 	let iconSize;
 	const isLaptop = useMediaQuery(`screen and (min-width: ${media.lg})`);
 	const isTab = useMediaQuery(
-		`screen and (min-width: ${media.$md}) and (max-width: ${media.$lg})`
+		`screen and (min-width: ${media.md}) and (max-width: ${media.lg})`
 	);
 
 	if (isLaptop) {

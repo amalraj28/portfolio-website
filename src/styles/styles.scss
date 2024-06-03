@@ -147,7 +147,6 @@
 }
 
 .about-me {
-  font-size: 13px;
   animation: slideLeft 1s ease forwards;
 }
 
@@ -181,14 +180,11 @@
   display: flex;
 }
 
-
-
 #skills {
   padding-top: 5%;
   background-color: rgba(98, 99, 99, 0.356);
   margin-top: 2%;
-  height: 80vh;
-  border-radius: 70px 70px 0 0;
+  border-radius: 70px 70px;
 
   .title {
     animation: slideRignt;
@@ -491,5 +487,33 @@
 
   .social-media {
     margin: 3% 35% 0 35%;
+  }
+}
+
+@media screen and (width < media.$laptop-lg) {
+  #skills {
+    li {
+      padding-bottom: 5svw;
+    }
+
+    margin-bottom: 10svw;
+  }
+
+  .author {
+    margin-top: 5svw;
+  }
+
+  .author-name {
+    padding-left: 2svw;
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .about-me {
+    margin-top: 3svw;
+    font-size: 15px;
   }
 }
