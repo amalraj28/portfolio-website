@@ -402,30 +402,33 @@
   .project-items {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    column-gap: 60px;
-    row-gap: 30px;
-    // background-color: red;
-    margin-bottom: 0;
-    width: 55%;
-    margin-left: 22svw;
+    column-gap: 4svw;
+    row-gap: 1.25svw;
+    width: fit-content;
+    margin-left: 16svw;
+  }
+  
+  .change-image-size {
+    height: 20svw !important;
+    width: 20svw !important;
+    padding: 1svw;
   }
 
   .project-item {
-    width: 100%;
-
-    .item-description {
-      h4 {
-        font-size: large;
-      }
-
-      button {
-        margin-left: 2svw;
-      }
-    }
+    width: fit-content;
+    padding-bottom: 1svw;
+    border: 2px solid #0e9;
+    border-radius: 2svw;
+    box-shadow: 0 0 10px 8px red;
+    margin-bottom: 0;
   }
 
   #project-title {
-    margin-left: 2svw;
+    margin: 0 0 0 1svw;
+  }
+
+  .project-button {
+    margin: 0.8svw 0 0 1svw;
   }
 
   #skills {
@@ -435,7 +438,6 @@
     border-radius: 70px 70px;
 
     .list-div {
-
       ul {
         margin-left: 3%;
 
