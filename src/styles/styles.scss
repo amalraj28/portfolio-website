@@ -583,10 +583,11 @@
 
 @media screen and (width < media.$mobile-sm) {
   .project-item {
-    width: 100%;
+    width: 90svw;
     border: 2px solid #0e9;
     border-radius: 4svw;
     margin-bottom: 4svw;
+    margin-left: 5svw;
     padding: 1svw 1svw 2svw 1svw;
   }
 
@@ -600,7 +601,7 @@
 
   .change-image-size {
     border: 1px solid black;
-    width: 90svw !important;
+    width: 80svw !important;
     margin-bottom: 1svw;
   }
 }
