@@ -321,7 +321,7 @@
     width: fit-content;
     margin-left: 7svw;
   }
-  
+
   .change-image-size {
     height: 40svw !important;
     width: 40svw !important;
@@ -420,7 +420,7 @@
     width: fit-content;
     margin-left: 16svw;
   }
-  
+
   .change-image-size {
     height: 20svw !important;
     width: 20svw !important;
@@ -493,6 +493,40 @@
   .social-media {
     margin: 2% 36% 0 36%;
   }
+
+  .new-skills {
+    background-color: #020301;
+    display: grid;
+    grid-template-columns: repeat(3, 10svw);
+    margin: 0 35svw;
+    row-gap: 0;
+    color: white;
+    border-radius: 2svw;
+  }
+
+  .skill-heading {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    font-size: 1.75svw;
+    padding: 1svw 0;
+  }
+
+  .skill-name {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1svw;
+    color: white;
+  }
+
+  .skill-icon {
+    margin: 0 0 0 3.25svw;  
+  }
 }
 
 @media screen and (orientation: landscape) {
@@ -537,10 +571,13 @@
   }
 
   .form-components {
-    input, textarea {
+
+    input,
+    textarea {
       width: 85svw;
       margin-left: 7.8svw;
     }
+
     button {
       margin-left: 7.8svw;
     }
