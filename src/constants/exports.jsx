@@ -1,3 +1,5 @@
+import * as SkillIcons from "./svg";
+
 export const jobs = [
 	"Python Developer",
 	"Flutter Developer",
@@ -46,7 +48,7 @@ export const projects = {
 		name: "PDF to Audiobook Converter",
 		thumbnail: "/assets/pdf_to_audiobook.png",
 		github: "https://github.com/amalraj28/pdf_to_audiobook",
-		description: "Python script that reads out a PDF file"
+		description: "Python script that reads out a PDF file",
 	},
 };
 
@@ -62,4 +64,14 @@ export const handleScroll = (ref) => {
 		left: 0,
 		behavior: "smooth",
 	});
+};
+
+export const skills = {
+	"Programming Languages": [
+		{ name: "C", Icon: SkillIcons.CIcon },
+		{ name: "C++", Icon: SkillIcons.CPlusPlusIcon },
+		{ name: "Python", Icon: SkillIcons.PythonIcon },
+		{ name: "JavaScript", Icon: SkillIcons.JavaScriptIcon },
+		{ name: "MATLAB", Icon: SkillIcons.MatlabIcon },
+	]
 };

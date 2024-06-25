@@ -27,7 +27,7 @@ function App() {
 			<Author selfRef={refObjects.Author} />
 			<div className="sized-box" /> */}
 			{/* <Skills selfRef={refObjects.Skills} /> */}
-			<NewSkills selfRef={refObjects.Skills}/>
+			<Skills selfRef={refObjects.Skills}/>
 			{/* <div className="sized-box" />
 			<Projects selfRef={refObjects.Projects} />
 			<div className="sized-box" />

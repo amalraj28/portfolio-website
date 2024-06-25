@@ -1,50 +1,19 @@
-import {
-	COriginalIcon,
-	CplusplusOriginalIcon,
-	CsharpOriginalIcon,
-	JavascriptOriginalIcon,
-	PythonOriginalIcon,
-	SequelizeOriginalIcon,
-} from "react-devicons";
+import { skills } from "../constants/exports";
+import "../styles/styles.scss";
 
-function NewSkills() {
+function NewSkills({ heading }) {
 	return (
-		<>
-			<div className="new-skills">
-				<h3 className="skill-heading">Programming Languages</h3>
-				
-				<div className="skill-item">
-					<COriginalIcon className="skill-icon" size="3.5svw" />
-					<p className="skill-name">sds</p>
+		<div className="new-skills">
+			<h3 className="skill-heading">{heading}</h3>
+
+			{skills[heading].map(({ name, Icon }, index) => (
+				<div key={index}>
+					<Icon classes="skill-icon foreground-image" />
+					<Icon classes="skill-icon background-image" />
+					<p className="skill-name">{name}</p>
 				</div>
-				
-        <div className="skill-item">
-					<CplusplusOriginalIcon className="skill-icon" size="3.5svw" />
-					<p className="skill-name">sds</p>
-				</div>
-				
-        <div className="skill-item">
-					<PythonOriginalIcon className="skill-icon" size="3.5svw" />
-					<p className="skill-name">sds</p>
-				</div>
-				
-        <div className="skill-item">
-					<CsharpOriginalIcon className="skill-icon" size="3.5svw" />
-					<p className="skill-name">sds</p>
-				</div>
-				
-        <div className="skill-item">
-					<SequelizeOriginalIcon className="skill-icon" size="3.5svw" />
-					<p className="skill-name">sds</p>
-				</div>
-				
-        <div className="skill-item">
-					<JavascriptOriginalIcon className="skill-icon" size="3.5svw" />
-					<p className="skill-name">sds</p>
-				</div>
-				
-			</div>
-		</>
+			))}
+		</div>
 	);
 }
 

@@ -516,16 +516,35 @@
   }
 
   .skill-name {
-    padding: 0;
+    padding: 0 0 1svw 0;
     margin: 0;
     display: flex;
     justify-content: center;
-    padding-bottom: 1svw;
     color: white;
   }
 
   .skill-icon {
-    margin: 0 0 0 3.25svw;  
+    margin: 0 0 0 3.25svw;
+    width: 3.5svw;
+  }
+
+  .skill-icon:hover {
+    transform: scale(1.15);
+  }
+
+  .foreground-image {
+    position: relative;
+    z-index: 2;
+  }
+
+  .background-image {
+    position: absolute;
+    transform: scale(1.05);
+    opacity: 1;
+    z-index: 1;
+    margin-left: -3.5svw;
+    filter: blur(15px);
+    user-select: none;
   }
 }
 
