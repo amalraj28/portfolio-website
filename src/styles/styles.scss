@@ -312,6 +312,19 @@
   justify-content: space-evenly;
 }
 
+.rotate-icon {
+  animation: rotate 3s linear 0.5s infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
 @media screen and (min-width: media.$mobile-md) and (max-width: media.$laptop-lg) {
   .project-items {
     display: grid;
