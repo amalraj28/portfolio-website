@@ -17,7 +17,6 @@ export const projects = {
 		thumbnail: "/assets/portfolio.png",
 		github: "https://github.com/amalraj28/portfolio-website",
 		description: "My portfolio website built using React.js",
-		liveLink: "https:amalraj.vercel.app",
 	},
 
 	passwordManager: {
@@ -95,6 +94,7 @@ export const skills = {
 		{name: "GitHub", Icon: Icons.GithubIcon},
 		{name: "MySQL", Icon: Icons.MysqlIcon},
 		{name: "SQLLite", Icon: Icons.SqlliteIcon},
-		{name: "MariaDB", Icon: Icons.Mariadb}
+		{name: "MariaDB", Icon: Icons.Mariadb},
+		{name: "FastAPI", Icon: Icons.FastapiIcon}
 	]
 };
