@@ -94,7 +94,6 @@ export const skills = {
 		{name: "GitHub", Icon: Icons.GithubIcon},
 		{name: "MySQL", Icon: Icons.MysqlIcon},
 		{name: "SQLLite", Icon: Icons.SqlliteIcon},
-		{name: "MariaDB", Icon: Icons.Mariadb},
 		{name: "FastAPI", Icon: Icons.FastapiIcon}
 	]
 };
