@@ -3,9 +3,8 @@ import "../styles/styles.scss";
 
 function SkillCategory({ heading }) {
 	return (
-		<div className="new-skills">
+		<div className="skill-category">
 			<h3 className="skill-heading">{heading}</h3>
-
 			{skills[heading].map(({ name, Icon }, index) => (
 				<div key={index}>
 					<Icon classes="skill-icon foreground-image" />

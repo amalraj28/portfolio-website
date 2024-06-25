@@ -6,7 +6,6 @@ function Skills({ selfRef }) {
 	return (
 		<div className="skills" ref={selfRef}>
 			<h3 className="title">Skills</h3>
-			
 			<div className="skill-grid">
 				{Object.keys(skills).map((heading, idx) => (
 					<SkillCategory key={idx} heading={heading} />

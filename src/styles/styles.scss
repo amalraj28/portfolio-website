@@ -517,12 +517,16 @@
     margin: 1.5svw 0;
   }
 
-  .new-skills {
+  .skill-category {
     background-color: #020301;
     display: grid;
     grid-template-columns: repeat(3, 10svw);
     color: white;
     border-radius: 2svw;
+  }
+
+  .skills {
+    animation: slideLeft 1s ease forwards;
   }
 
   .skill-heading {
