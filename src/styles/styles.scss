@@ -494,12 +494,20 @@
     margin: 2% 36% 0 36%;
   }
 
+  .skill-grid {
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    row-gap: 2svw;
+    column-gap: 2svw;
+    margin: 1.5svw 0;
+  }
+
   .new-skills {
     background-color: #020301;
     display: grid;
     grid-template-columns: repeat(3, 10svw);
-    margin: 0 35svw;
-    row-gap: 0;
     color: white;
     border-radius: 2svw;
   }

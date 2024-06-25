@@ -1,4 +1,4 @@
-import * as SkillIcons from "./svg";
+import * as Icons from "./svg";
 
 export const jobs = [
 	"Python Developer",
@@ -68,10 +68,32 @@ export const handleScroll = (ref) => {
 
 export const skills = {
 	"Programming Languages": [
-		{ name: "C", Icon: SkillIcons.CIcon },
-		{ name: "C++", Icon: SkillIcons.CPlusPlusIcon },
-		{ name: "Python", Icon: SkillIcons.PythonIcon },
-		{ name: "JavaScript", Icon: SkillIcons.JavaScriptIcon },
-		{ name: "MATLAB", Icon: SkillIcons.MatlabIcon },
+		{ name: "C", Icon: Icons.CIcon },
+		{ name: "C++", Icon: Icons.CPlusPlusIcon },
+		{ name: "Python", Icon: Icons.PythonIcon },
+		{ name: "JavaScript", Icon: Icons.JavascriptIcon },
+		{ name: "MATLAB", Icon: Icons.MatlabIcon },
+	],
+	"Front-end Development": [
+		{ name: "HTML5", Icon: Icons.Html5Icon },
+		{ name: "CSS3", Icon: Icons.Css3Icon },
+		{ name: "JavaScript", Icon: Icons.JavascriptIcon },
+		{ name: "ReactJS", Icon: Icons.ReactIcon },
+		{ name: "SASS", Icon: Icons.SassIcon },
+		{ name: "Flutter", Icon: Icons.FlutterIcon },
+	],
+	"Deep Learning": [
+		{name: "Python", Icon: Icons.PythonIcon},
+		{name: "Pytorch", Icon: Icons.PytorchIcon},
+		{name: "Keras", Icon: Icons.KerasIcon},
+		{name: "Numpy", Icon: Icons.NumpyIcon},
+		{name: "Pandas", Icon: Icons.PandasIcon},
+		{name: "Matplotlib", Icon: Icons.MatplotlibIcon}
+	],
+	"Other Tools": [
+		{name: "Git", Icon: Icons.GitIcon},
+		{name: "GitHub", Icon: Icons.GithubIcon},
+		{name: "MySQL", Icon: Icons.MysqlIcon},
+		{name: "SQLLite", Icon: Icons.SqlliteIcon}
 	]
 };

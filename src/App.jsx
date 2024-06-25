@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import NewSkills from "./components/NewSkills";
 
 function App() {
 	const components = [
@@ -23,17 +22,16 @@ function App() {
 
 	return (
 		<div>
-			{/* <Navbar compRefs={refObjects} />
+			<Navbar compRefs={refObjects} />
 			<Author selfRef={refObjects.Author} />
-			<div className="sized-box" /> */}
-			{/* <Skills selfRef={refObjects.Skills} /> */}
+			<div className="sized-box" />
 			<Skills selfRef={refObjects.Skills}/>
-			{/* <div className="sized-box" />
+			<div className="sized-box" />
 			<Projects selfRef={refObjects.Projects} />
 			<div className="sized-box" />
 			<div className="sized-box" />
 			<Contact selfRef={refObjects.Contact} />
-			<Footer selfRef={refObjects.Footer} /> */}
+			<Footer selfRef={refObjects.Footer} />
 		</div>
 	);
 }

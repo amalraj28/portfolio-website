@@ -1,7 +1,7 @@
 import { skills } from "../constants/exports";
 import "../styles/styles.scss";
 
-function NewSkills({ heading }) {
+function SkillCategory({ heading }) {
 	return (
 		<div className="new-skills">
 			<h3 className="skill-heading">{heading}</h3>
@@ -17,4 +17,4 @@ function NewSkills({ heading }) {
 	);
 }
 
-export default NewSkills;
+export default SkillCategory;
