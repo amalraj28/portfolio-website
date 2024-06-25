@@ -50,7 +50,7 @@
 
 .project-item {
   display: flex;
-  justify-content: space-around; // small screen --- center large space-between
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 10px;
   width: 120%;
@@ -76,7 +76,6 @@
       &:hover {
         background-color: #0ef;
         box-shadow: 1px 1px 11px 2px #0ef;
-        // border: 0cap;
       }
     }
   }
@@ -154,7 +153,6 @@
   color: #0ef;
 }
 
-
 .sized-box {
   padding-top: 1%;
   padding-bottom: 1%;
@@ -178,49 +176,6 @@
   animation: slideRignt;
   font-size: 32px;
   font-weight: 700;
-}
-
-#skills {
-  padding-top: 5%;
-  background-color: rgba(98, 99, 99, 0.356);
-  margin-top: 2%;
-  border-radius: 70px 70px;
-
-  .list-div {
-    width: 85%;
-    margin-left: 10%;
-    padding: 0;
-
-    ul {
-      list-style-type: none;
-      padding-bottom: 0;
-      padding-left: 0;
-      padding-right: 0;
-      margin: 0;
-      width: fit-content;
-
-
-      li {
-        display: inline-flex;
-        width: 25%;
-        align-self: center;
-
-        .skill-label {
-          text-align: center;
-          font-weight: 700;
-
-        }
-
-        .skills-icon:hover {
-          background-color: #0ef;
-          box-shadow: 1px 1px 11px 2px #0ef;
-          border: 0cap;
-          border-radius: 20px;
-
-        }
-      }
-    }
-  }
 }
 
 .spinner {
@@ -356,17 +311,6 @@
 
   .project-button {
     margin: 0.8svw 0 0 1svw;
-  }
-
-  #skills {
-    .list-div {
-      ul {
-        li {
-          width: 20%;
-          padding-bottom: 1%;
-        }
-      }
-    }
   }
 
   .skill-grid {
@@ -524,28 +468,6 @@
     margin: 0.8svw 0 0 1svw;
   }
 
-  #skills {
-    padding-top: 2%;
-    margin: 2% 5% 2% 5%;
-    height: auto;
-    border-radius: 70px 70px;
-
-    .list-div {
-      ul {
-        margin-left: 3%;
-
-        li {
-          width: 16%;
-          padding-bottom: 1.4%;
-        }
-
-        .skill-label {
-          font-size: large;
-        }
-      }
-    }
-  }
-
   .form-components {
     margin: 0 20svw;
 
@@ -651,14 +573,6 @@
 }
 
 @media screen and (width < media.$laptop-lg) {
-  #skills {
-    li {
-      padding-bottom: 5svw;
-    }
-
-    margin-bottom: 10svw;
-  }
-
   .author {
     margin-top: 5svw;
   }
