@@ -685,4 +685,73 @@
     width: 80svw !important;
     margin-bottom: 1svw;
   }
+
+  .skill-grid {
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    row-gap: 1svw;
+    column-gap: 1svw;
+    margin: 1.5svw 0 8.5svw 0;
+    // background-color: red;
+  }
+
+  .skill-category {
+    background-color: #020301;
+    display: grid;
+    grid-template-columns: repeat(2, 23svw);
+    color: white;
+    border-radius: 6svw;
+    padding: 0 1.5svw;
+  }
+
+  .skills {
+    animation: slideLeft 1s ease forwards;
+  }
+
+  .skill-heading {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    font-size: 3.5svw;
+    padding: 2svw 0;
+  }
+
+  .skill-name {
+    padding-bottom: 1svw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 3.5svw;
+    color: white;
+    margin-left: -2svw
+  }
+
+  .skill-icon {
+    margin-left: 5svw;
+    width: 10svw;
+  }
+
+  .skill-icon:hover {
+    transform: scale(1.15);
+  }
+
+  .foreground-image {
+    position: relative;
+    z-index: 2;
+  }
+
+  .background-image {
+    position: absolute;
+    transform: scale(1.05);
+    opacity: 1;
+    z-index: 1;
+    margin-left: -10svw;
+    filter: blur(1.5svw);
+    user-select: none;
+  }
 }
