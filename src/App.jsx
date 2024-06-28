@@ -32,6 +32,7 @@ function App() {
 			<div className="sized-box" />
 			<Contact selfRef={refObjects.Contact} />
 			<Footer selfRef={refObjects.Footer} />
+			{/* <Author1 /> */}
 		</div>
 	);
 }

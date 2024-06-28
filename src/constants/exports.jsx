@@ -1,9 +1,7 @@
 import * as Icons from "./svg";
 
 export const jobs = [
-	"Python Developer",
-	"Flutter Developer",
-	"C++ Developer",
+
 	"Front-End Web Developer",
 	"Deep Learning Enthusiast",
 ];

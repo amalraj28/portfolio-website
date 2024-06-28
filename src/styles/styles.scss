@@ -102,33 +102,9 @@
 
 .image {
   display: flex;
-
-  img {
-    border-radius: 50%;
-    box-shadow: 2px 2px 2px 2px rgba(3, 3, 3, 0.438);
-    width: 100px;
-    height: 100px;
-
-    transition: .3s;
-    opacity: 1;
-    animation: SlideTop .5s ease;
-  }
-}
-
-.author-name {
-  h3 {
-    font-size: 15px;
-    font-weight: 700;
-  }
-
-  h1 {
-    font-size: 36px;
-    font-weight: 700;
-  }
-
-  margin-top: 0%;
-  margin-bottom: 0;
-  animation: slideRight 1s ease forwards;
+  transition: .3s;
+  opacity: 1;
+  animation: SlideTop .5s ease;
 }
 
 .author-description {
@@ -147,10 +123,6 @@
   position: relative;
   top: 15%;
   bottom: 50%;
-}
-
-.typewritter-span {
-  color: #0ef;
 }
 
 .sized-box {
@@ -254,6 +226,25 @@
   text-align: center;
 }
 
+.typewriter-span {
+  color: #0ef;
+}
+
+.author-name {
+  display: flex;
+  justify-content: space-between;
+  animation: slideRight 1s ease forwards;
+
+  h3 {
+    font-weight: 700;
+  }
+
+  h1 {
+    font-weight: 700;
+    animation: slideRight 1s ease forwards;
+  }
+}
+
 .footer-text {
   color: rgb(115, 37, 37);
   font-size: small;
@@ -275,6 +266,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(180deg);
   }
@@ -379,6 +371,19 @@
     filter: blur(1.5svw);
     user-select: none;
   }
+
+  .author-name {
+    margin-left: 2svw;
+    width: 80svw;
+  }
+
+  .image {
+    img {
+      width: 18vw;
+      height: 18vw;
+      border-radius: 90svw;
+    }
+  }
 }
 
 @media screen and (min-width: media.$laptop-lg) {
@@ -389,24 +394,18 @@
   .author-name {
     h3 {
       font-size: 32px;
-      font-weight: 700;
     }
 
     h1 {
       font-size: 56px;
-      font-weight: 700;
     }
 
-    margin-top: 0%;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-bottom: 0;
-    width: 40svw;
-    animation: slideRight 1s ease forwards;
+    margin-left: 0;
+    width: 65svw;
   }
 
   .author-description {
-    margin: 1svw 10% 0 0;
+    margin: 1svw 0 0 0;
     text-align: justify;
   }
 
@@ -417,16 +416,8 @@
     animation: slideLeft 1s ease forwards;
   }
 
-  .typewritter-span {
-    color: #0ef;
-  }
-
   .image {
-    margin-top: 0%;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-bottom: 2%;
-    display: flex;
+    margin: 0;
 
     img {
       border-radius: 50%;
@@ -577,15 +568,6 @@
     margin-top: 5svw;
   }
 
-  .author-name {
-    padding-left: 2svw;
-    display: grid;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-
   .about-me {
     margin-top: 3svw;
     font-size: 15px;
@@ -733,5 +715,33 @@
     margin-left: -10svw;
     filter: blur(1.5svw);
     user-select: none;
+  }
+
+  .author-name {
+    h1 {
+      font-size: 8svw;
+      width: fit-content;
+    }
+
+    h3 {
+      font-size: 5svw;
+    }
+
+    margin-left: 2svw;
+  }
+
+  .image {
+    img {
+      border-radius: 50%;
+      width: 25svw;
+      height: 25svw;
+      box-shadow: 2px 2px 2px 2px rgba(3, 3, 3, 0.438);
+    }
+
+    justify-content: flex-end;
+  }
+
+  .title {
+    font-size: 7svw;
   }
 }
