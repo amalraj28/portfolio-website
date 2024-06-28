@@ -1,7 +1,9 @@
 import * as Icons from "./svg";
 
 export const jobs = [
-
+	"Python Developer",
+	"Flutter Developer",
+	"C++ Developer",
 	"Front-End Web Developer",
 	"Deep Learning Enthusiast",
 ];
@@ -80,18 +82,18 @@ export const skills = {
 		{ name: "Flutter", Icon: Icons.FlutterIcon },
 	],
 	"Deep Learning": [
-		{name: "Python", Icon: Icons.PythonIcon},
-		{name: "Pytorch", Icon: Icons.PytorchIcon},
-		{name: "Keras", Icon: Icons.KerasIcon},
-		{name: "Numpy", Icon: Icons.NumpyIcon},
-		{name: "Pandas", Icon: Icons.PandasIcon},
-		{name: "Matplotlib", Icon: Icons.MatplotlibIcon}
+		{ name: "Python", Icon: Icons.PythonIcon },
+		{ name: "Pytorch", Icon: Icons.PytorchIcon },
+		{ name: "Keras", Icon: Icons.KerasIcon },
+		{ name: "Numpy", Icon: Icons.NumpyIcon },
+		{ name: "Pandas", Icon: Icons.PandasIcon },
+		{ name: "Matplotlib", Icon: Icons.MatplotlibIcon },
 	],
 	"Other Tools": [
-		{name: "Git", Icon: Icons.GitIcon},
-		{name: "GitHub", Icon: Icons.GithubIcon},
-		{name: "MySQL", Icon: Icons.MysqlIcon},
-		{name: "SQLLite", Icon: Icons.SqlliteIcon},
-		{name: "FastAPI", Icon: Icons.FastapiIcon}
-	]
+		{ name: "Git", Icon: Icons.GitIcon },
+		{ name: "GitHub", Icon: Icons.GithubIcon },
+		{ name: "MySQL", Icon: Icons.MysqlIcon },
+		{ name: "SQLLite", Icon: Icons.SqlliteIcon },
+		{ name: "FastAPI", Icon: Icons.FastapiIcon },
+	],
 };
