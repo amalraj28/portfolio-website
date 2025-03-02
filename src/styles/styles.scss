@@ -392,6 +392,7 @@
   }
 
   .author-name {
+    justify-self: center;
     h3 {
       font-size: 32px;
     }
@@ -412,6 +413,7 @@
   .about-me {
     width: 80%;
     font-size: 18px;
+    justify-self: center;
     font-family: 'Times New Roman', Times, serif;
     animation: slideLeft 1s ease forwards;
   }
